@@ -27,6 +27,7 @@
     flex-direction: column;
     max-height: none;
     padding: 10px;
+    width: 100vw;
   }
 
   .li-container {

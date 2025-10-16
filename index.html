@@ -8,6 +8,17 @@
 
   <link rel="stylesheet" href="index.css">
       <link href="/dist/output.css" rel="stylesheet">
+
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "EULoW6QYytovuC_T8",
+      });
+   })();
+</script>
 </head>
 <body>
   <div class="nav-container">
@@ -124,7 +135,7 @@
     </div>
  
 
-    
+    <form>
 <section class="text-gray-600 body-font relative">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
@@ -145,6 +156,10 @@
             <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
         </div>
+        <div class="subject">
+          <label for="subject" class="leading-7 text-sm text-gray-600">Subject </label>
+          <input type="text" id="subject"  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
         <div class="p-2 w-full">
           <div class="relative">
             <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
@@ -152,10 +167,11 @@
           </div>
         </div>
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="sendEmail()" type="button">Send</button>
         </div>
+        </form>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-          <a class="text-indigo-500">Saqeeb281@email.com</a>
+          <a class="text-indigo-500">Example@gmail.com</a>
           <p class="leading-normal my-5">New Masjid Mohalla,
             <br>BK Road, Magadi -562120
           </p>
@@ -187,12 +203,12 @@
     </div>
   </div>
 </section>
-    
+
 <div class="footer">
     <footer>
       <h2>Copyright © 2024 Saqeeb Khan. All rights reserved.</h2>
     </footer>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script src="index.js"></script>
+  <script type="text/javascript"  src="index.js"></script>
 </body>
 </html>
