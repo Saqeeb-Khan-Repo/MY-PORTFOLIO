@@ -371,18 +371,20 @@ span {
   padding: 20px;
 }
 .pq {
-  font-size: 0.7rem;
+  font-size: 1.7rem;
   color: rgb(175, 173, 186);
-  text-align: left;
+  text-align: center;
   line-height: 1.6;
-  width: 50%;
-  margin-left: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-style: italic;
+
 }
 .aboutMe {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 .top {
@@ -455,7 +457,7 @@ color: white;
 }
 .ed{
   font-size: 2rem;
-  color: gray;
+  color: rgb(220, 215, 215);
 }
 .h2{
   font-size: 2rem;
