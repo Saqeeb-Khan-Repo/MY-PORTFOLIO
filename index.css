@@ -408,32 +408,27 @@ span {
   font-weight: bold;
 }
 #name{
-background-color: transparent;
-color: white;
 
 &:focus{
   border: 3px solid rgb(229, 23, 109);
 }
 }
-#subject{
-background-color: transparent;
-color: white;
+#subject{ 
+  width:100%;
 
 &:focus{
   border: 3px solid rgb(229, 23, 109);
 }
 }
 #email{
-background-color: transparent;
-color: white;
+
 
 &:focus{
   border: 3px solid rgb(229, 23, 109);
 }
 }
 #message{
-background-color: transparent;
-color: white;
+
 
 &:focus{
   border: 3px solid rgb(229, 23, 109);
