@@ -34,10 +34,13 @@
     max-height: 50% ;
   }
 
-  .about {
-    width: 100vw;
-    margin-left: 5vw;
-    font-size: 0.5rem;
+ .about {
+  display: flex;
+  flex-direction: column;
+    font-size: 1rem;
+  
+    width: 50%;
+    height: 50%;
   }
 
   .img {
@@ -99,6 +102,11 @@
     width: auto;
     height: auto;
   }
+  .about {
+    font-size: 1rem;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -125,7 +133,8 @@
 
   .about {
     font-size: 1rem;
-    height: auto;
+    width: 50%;
+    height: 50%;
   }
 
   .hero-container {
@@ -273,8 +282,8 @@ h1 {
   font-size: 2.4rem;
 }
 .about {
-  width: 70vw;
-  height: 60vh;
+  width: 50%;
+  height: 50%;
   text-align: left;
   line-height: 1.6;
   box-shadow: 0 0 13px 7px rgba(0, 255, 0, 0.5);
@@ -456,3 +465,28 @@ color: white;
   font-size: 3rem;
   
 }
+.main-container{
+  width: 100%;
+  height: auto;
+}
+.image{
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  opacity: 80%;
+  border: 2px solid white;
+  padding: 4px;
+}
+.bg {
+  background-color: rgba(0, 149, 255, 0.779);
+  padding: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+  box-shadow:  2px 2px 60px gray, inset -2px -2px 60px;
+
+ 
+}
+.bg a:active{
+   color: red;
+   font-size: 1.1em;
+  }
