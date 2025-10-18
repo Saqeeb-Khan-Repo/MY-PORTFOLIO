@@ -324,11 +324,11 @@ h1 {
   width: 100%;
   overflow: hidden;
 }
-.section {
+/* .section {
   height: 100vh;
-  /* border: 2px solid rgb(248, 245, 245); */
-  width: 100vw;
-}
+  border: 2px solid rgb(248, 245, 245);
+  
+} */
 section {
   margin-top: 20px;
 }
@@ -383,8 +383,8 @@ span {
 }
 .top {
   margin-top: 90px;
-}
-.p1 {
+} */
+ .p1 {
   margin-top: 0;
 }
 .photo {
@@ -437,7 +437,7 @@ span {
 }
 .content-container {
   width: 100%;
-  height: auto;
+ 
 }
 .ed {
   font-size: 2rem;
@@ -452,7 +452,7 @@ span {
 }
 .main-container {
   width: 100%;
-  height: auto;
+  
 }
 .image {
   width: 50%;
@@ -496,4 +496,12 @@ button {
 .skills::before {
   content: "My ";
   color: red;
+}
+.new{
+ 
+  height: auto;
+  width: 100vw;
+}
+hr{
+ box-shadow: 5px -16px 20px 0px rgb(4, 48, 130),inset 0 0 0 0;
 }
