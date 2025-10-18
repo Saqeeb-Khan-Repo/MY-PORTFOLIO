@@ -156,7 +156,7 @@
 }
 }
 body {
-  background-image: url(/images/background.jpg);
+  background-image: url(/Asserts/background.jpg);
   
   background-size: cover;
  
@@ -492,7 +492,6 @@ span {
    color: red;
    font-size: 1.1em;
   }
-<<<<<<< HEAD
   button{
 
   cursor: pointer;
@@ -520,5 +519,3 @@ span {
   content:'My ';
   color: red;
 }
-=======
->>>>>>> d7ac823a81f46ccc28ea98625a9aa8c7decac3e8
