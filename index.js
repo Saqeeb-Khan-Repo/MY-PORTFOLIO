@@ -8,4 +8,13 @@ function sendEmail() {
   emailjs
     .send("service_etjco1j", "template_4kgdr3c", parms)
     .then(() => alert("Email Sent!!").catch(() => alert("Email not sent!")));
-}
+};
+
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetId = e.target.getAttribute("data-target");
+    const section = document.getElementById(targetId);
+    section.scrollIntoView({ behavior: "smooth" });
+  });
+});

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My PortFolio</title>
-          <link rel="icon" type="image/x-icon" href="favicon.png">
+          <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
   <link rel="stylesheet" href="index.css">
 
@@ -24,23 +24,24 @@
 </head>
 <body>
 
+  
 <header class="text-gray-300 body-font bg">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <!-- <a class="flex title-font font-medium items-center  mb-4 md:mb-0"> -->
+    <a class="flex title-font font-medium items-center  mb-4 md:mb-0" href="#" data-target ="Home" >
 
       <span class="ml-3 text-xl title-font text-3xl">PortFolio</span>
   
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900">About Me</a>
-      <a class="mr-5 hover:text-gray-900">My Skills</a>
-      <a class="mr-5 hover:text-gray-900">Projects</a>
-      <a class="mr-5 hover:text-gray-900">Education</a>
-      <a class="mr-5 hover:text-gray-900">Contact</a>
+     <a href="#" data-target ="About" class="mr-5 ">About Me</a>
+      <a href="#" data-target ="Skills" class="mr-5 ">My Skills</a>
+      <a href="#" data-target ="Projects"  class="mr-5 ">Projects</a>
+      <a href="#" data-target ="Education" class="mr-5 ">Education</a>
+      <a href="#" data-target ="Contact" class="mr-5 ">Contact</a>
     </nav>
   </div>
 </header>
 
-<hr>
+
   <!-- <div class="nav-container">
     <div class="heading">
     <h3>Portfoli0</h3>
@@ -57,12 +58,12 @@
   </nav>
     </div> -->
 
-  </div>
+<section id="Home">
 <div class="section main-container">
   <section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded image" alt="hero" src="saqeebkhan.jpg">
+      <img class="object-cover object-center rounded image" alt="hero" src="/images/saqeebkhan.jpg">
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium ">Saqeeb khan 
@@ -78,13 +79,13 @@
   </div>
 </section>
 </div>
+</section>
 
 
 
 
 
 
-<hr>
   <!-- <div class="section khan">
      <section class="text-gray-600 body-font ">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -104,7 +105,7 @@
 
   
  
-
+<section id="About">
 <hr class="line">
     <div class="section">
       <div class="about-container">
@@ -113,10 +114,13 @@
         <p class="pq">I am a dedicated and passionate web developer with a strong foundation in HTML, CSS, JavaScript, and React JS. I enjoy creating visually appealing and user-friendly websites that provide an excellent user experience. I am constantly learning and staying updated with the latest web development trends and technologies to enhance my skills and deliver high-quality projects.</p>
         </div>
       </div>
+</section>
+
 <hr class="line">
 
 
-       <div class="section top">
+<section id="Skills">
+<div class="section top">
       
  <div class="hero-container">
   <h1 class="skills">Skills:</h1>
@@ -136,9 +140,11 @@
    </h1>
   </div>
     </div>
+</section>
 
-
-<hr class="line">
+<br>
+<hr>
+<section id="Projects">
     <div class="section p1 project-container">
       <h1 class="project">Projects :</h1>
       <section class="text-gray-600 body-font">
@@ -147,7 +153,7 @@
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
             <a href="https://fyra-mytrashop.netlify.app/">
-          <img alt="content" class="object-cover object-center  photo h-full w-full" src="myntra-fraud-1734079639.webp">
+          <img alt="content" class="object-cover object-center  photo h-full w-full" src="/images/myntra-fraud-1734079639.webp">
             </a>
             <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
           <a href="https://fyra-mytrashop.netlify.app/">Project link</a>
@@ -161,7 +167,7 @@
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
           <a href="https://saqeeb-khan-repo.github.io/Calculator/">
-            <img alt="content" class="object-cover object-center  photo h-full w-full" src="calculator-icon.jpg">
+            <img alt="content" class="object-cover object-center  photo h-full w-full" src="/images/calculator-icon.jpg">
           </a>
             <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
           <a href="https://saqeeb-khan-repo.github.io/Calculator/">Project Link</a>
@@ -172,17 +178,17 @@
           Developed a responsive Calculator application replicating the Modern Calculator interface
           With Basic: HTML, CSS, and JavaScript.
         </p>
-      
         </button>
       </div>
     </div>
   </div>
 </section>
     </div>
-
+</section>
 
 
 <hr class="line">
+ <section id="Education">
     <div class="section content-container">
       <h1 class="h1">Education</h1>
       <section class="text-gray-600 body-font overflow-hidden content ">
@@ -230,12 +236,13 @@
   </div>
 </section>
     </div>
- 
+</section>
  
 
 
 
 <hr class="line">
+<section id="Contact">
     <form>
 <section class="text-gray-600 body-font relative">
   <div class="container px-5 py-24 mx-auto">
@@ -303,6 +310,7 @@
       </div>
     </div>
   </div>
+</section>
 </section>
 
 <div class="footer">

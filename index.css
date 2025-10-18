@@ -156,9 +156,10 @@
 }
 }
 body {
-  background-image: url(background.jpg);
+  background-image: url(/images/background.jpg);
   
   background-size: cover;
+ 
   display: block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -194,7 +195,7 @@ h3 {
     border-radius: 30px;
   }
 }
-.nav-container {
+/* .nav-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -226,7 +227,7 @@ nav li a {
     transition: all 0.3s ease-in-out;
     font-weight: 900;
   }
-}
+} */
 
 h1 {
   color: white;
@@ -248,7 +249,6 @@ h1 {
   font-size: 2rem;
   text-align: center;
   align-items: center;
-  overflow: hidden;
 
   &:hover {
     transform: scale(1.1);
@@ -474,17 +474,22 @@ color: white;
 .image{
   width: 50%;
   height: 50%;
-  border-radius: 20px;
-  opacity: 80%;
+  border-radius: 40%;
+  opacity: 90%;
   border: 2px solid white;
-  padding: 4px;
+  padding: 7px;
+   box-shadow:  0px 0px 60px rgb(1, 85, 242), inset -2px -2px 36px rgb(4, 13, 248);
+   
 }
 .bg {
-  background-color: rgba(0, 149, 255, 0.779);
+  background-color: rgba(12, 12, 12, 0.779);
   padding: 5px;
   margin-top: 2px;
   cursor: pointer;
-  box-shadow:  2px 2px 60px gray, inset -2px -2px 60px;
+  box-shadow:  0px 0px 60px rgb(1, 85, 242), inset -2px -2px 36px rgb(4, 13, 248);
+  border-radius: 30px;
+  background-color: transparent;
+ 
 
  
 }
@@ -492,3 +497,30 @@ color: white;
    color: red;
    font-size: 1.1em;
   }
+  button{
+
+  cursor: pointer;
+  box-shadow:  0px 0px 60px rgb(3, 84, 234), inset -2px -2px 36px rgb(5, 13, 235);
+  border-radius: 50px;
+  }
+ 
+
+.hero{
+  animation: move 2s ease-in-out 1s infinite  ;
+  perspective: 200px;
+}
+@keyframes move {
+  from{
+  
+  }
+  to{
+
+    box-shadow: 0px 0 16px  rgb(255, 47, 175);
+
+  }
+  
+}
+.skills::before{
+  content:'My ';
+  color: red;
+}
