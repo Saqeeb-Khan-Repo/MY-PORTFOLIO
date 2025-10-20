@@ -8,7 +8,7 @@ function sendEmail() {
   emailjs
     .send("service_etjco1j", "template_4kgdr3c", parms)
     .then(() => alert("Email Sent!!").catch(() => alert("Email not sent!")));
-};
+}
 
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -17,4 +17,36 @@ document.querySelectorAll("nav a").forEach((link) => {
     const section = document.getElementById(targetId);
     section.scrollIntoView({ behavior: "smooth" });
   });
+});
+
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+
+const calculator = document.getElementById("cal");
+const myntra = document.getElementById("myntra");
+
+calculator.addEventListener("mouseover", event =>{
+  event.target.textContent = "hi how are you";
+  
+  event.target.style.opacity = "40%";
+});
+calculator.addEventListener("mouseout", (event) => {
+  event.target.style.opacity = "100%";
+});
+
+myntra.addEventListener("mouseover", (event) => {
+  event.target.textContent = "hi";
+  event.target.style.opacity = "40%";
+});
+myntra.addEventListener("mouseout", (event) => {
+  event.target.style.opacity = "100%";
 });
