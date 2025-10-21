@@ -388,11 +388,7 @@ span {
   margin-top: 0;
 }
 
-.skills {
-  font-size: 2.5rem;
-  text-align: left;
-  font-weight: bold;
-}
+
 #name {
   &:focus {
     border: 3px solid rgb(229, 23, 109);
@@ -515,4 +511,52 @@ hr{
   margin-top: 10px;
  top: 0;
  left: 0;
+}
+
+.cursor {
+ 
+  display: flex;
+  width: 100%;
+  margin: 100px auto;
+  overflow-x: auto;
+   /* box-shadow: 0 0 13px 7px rgba(244, 248, 244, 0.5);
+ border: 2px solid rgb(0, 30, 255); */
+ 
+}
+.cursor::-webkit-scrollbar {
+ display: none;
+}
+.group {
+  display: flex;
+  gap: 2rem;
+  animation: spin 5s infinite linear;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-grow: 1;
+
+  
+}
+.card {
+  flex: 0 0 5rem;
+  padding: 2rem;
+  flex: content;
+  font-size: calc(0.5rem,1rem);
+  width: calc(20%,50%);
+  max-width:fit-content;
+ 
+  
+}
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+.skills {
+  font-size: calc(3rem,5rem);
+  text-align: left;
+  font-weight: bold;
 }
