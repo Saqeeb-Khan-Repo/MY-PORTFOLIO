@@ -153,9 +153,9 @@
   }
 }
 body {
-  background-image: url(background.jpg);
-
-  background-size: cover;
+   /* background-image: url(background.jpg);
+  background-size: cover; */
+  background:radial-gradient(red,blue);
 
   display: block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -234,7 +234,7 @@ h1 {
   margin-top: 50px;
 }
 .hero {
-  width: 30vw;
+  width: 50%;
   height: 220px;
   border-radius: 10px;
   box-shadow: -3px 1px 18px rgba(31, 220, 91, 0.937);
@@ -246,13 +246,13 @@ h1 {
   text-align: center;
   align-items: center;
 
-  &:hover {
+  /* &:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     box-shadow: -3px 1px 18px rgba(31, 220, 91, 0.937),
       0 0 20px rgba(31, 220, 91, 0.937);
     scroll-behavior: smooth;
-  }
+  } */
 }
 .hero-container {
   display: flex;
@@ -314,15 +314,14 @@ h1 {
 }
 
 .footer {
-  padding: 10px;
-  background-color: rgb(44, 175, 236);
+  background-color: rgba(12, 12, 12, 0.779);
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 60px rgb(1, 85, 242), inset -2px -2px 36px rgb(4, 13, 248);
+  border-radius: 30px;
   color: white;
-  box-shadow: 0 0 8px rgb(38, 213, 106);
-  font-weight: bold;
-  /* position: relative; */
-  bottom: 0;
+  
   width: 100%;
-  overflow: hidden;
 }
 /* .section {
   height: 100vh;
@@ -339,11 +338,11 @@ span {
   object-fit: cover;
   width: 100%;
   height: 60vh;
-  border-radius: 50px;
+  border-radius: 30px;
   box-shadow: 0 0 13px 7px rgba(99, 228, 99, 0.968);
   /* margin-left: 40vw; */
-  opacity: 80%;
-
+  
+ 
   &:hover {
     box-shadow: 0 0 13px 7px rgba(96, 9, 225, 0.5);
     transition: all 0.3s ease-in-out;
@@ -458,7 +457,7 @@ span {
   cursor: pointer;
   box-shadow: 0px 0px 60px rgb(1, 85, 242), inset -2px -2px 36px rgb(4, 13, 248);
   border-radius: 30px;
-  background-color: transparent;
+ 
 }
 .bg a:active {
   color: red;
@@ -502,7 +501,8 @@ hr{
   /* border: 2px solid white; */
   cursor: pointer;
   opacity: 80%;
-   border: 2px solid rgb(20, 185, 227);
+   border: 2px solid rgb(227, 192, 20);
+   border-radius: 20px;
 }
 .contents{
   opacity: 0;
@@ -521,6 +521,8 @@ hr{
   overflow-x: auto;
    /* box-shadow: 0 0 13px 7px rgba(244, 248, 244, 0.5);
  border: 2px solid rgb(0, 30, 255); */
+  touch-action: none;
+  pointer-events: none;
  
 }
 .cursor::-webkit-scrollbar {
@@ -529,13 +531,12 @@ hr{
 .group {
   display: flex;
   gap: 2rem;
-  animation: spin 5s infinite linear;
+  animation: spin 3s infinite linear ;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   flex-grow: 1;
-
-  
+  touch-action: none;
 }
 .card {
   flex: 0 0 5rem;
@@ -544,6 +545,8 @@ hr{
   font-size: calc(0.5rem,1rem);
   width: calc(20%,50%);
   max-width:fit-content;
+  height: auto;
+  max-height: min-content;
  
   
 }
@@ -556,7 +559,47 @@ hr{
   }
 }
 .skills {
-  font-size: calc(3rem,5rem);
+  font-size: clamp(2rem,4rem,6rem);
   text-align: left;
   font-weight: bold;
 }
+.a1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+   
+    
+}
+.contain{
+  border: 2px solid rgba(35, 35, 36, 0.492);
+  padding: 50px;
+ gap: 20px;
+   flex-direction: row;
+    display: flex;
+  justify-content:space-between;
+  align-items: center;
+  box-shadow: 0 0 20px 10px ;
+  border-radius: 20px; 
+  background-color: rgba(0, 0, 0, 0.51); 
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  
+  
+}
+.box{
+  max-height: 296px;
+  height: 50%;
+  width: 300px;
+  flex-shrink: 1;
+  border-radius: 10px;
+
+}
+.s{
+  border: 2px solid rgb(24, 24, 11);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 12px 1px rgb(20, 185, 227) ;
+}
+

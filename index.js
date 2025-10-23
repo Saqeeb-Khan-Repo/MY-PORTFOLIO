@@ -33,6 +33,8 @@ requestAnimationFrame(raf);
 
 const calculator = document.getElementById("cal");
 const myntra = document.getElementById("myntra");
+const myn = document.getElementById("myn");
+const weather = document.getElementById("weather");
 
 calculator.addEventListener("mouseover", event =>{
   event.target.textContent = "hi how are you";
@@ -48,5 +50,21 @@ myntra.addEventListener("mouseover", (event) => {
   event.target.style.opacity = "40%";
 });
 myntra.addEventListener("mouseout", (event) => {
+  event.target.style.opacity = "100%";
+});
+
+myn.addEventListener("mouseover", (event) => {
+  event.target.textContent = "hi";
+  event.target.style.opacity = "40%";
+});
+myn.addEventListener("mouseout", (event) => {
+  event.target.style.opacity = "100%";
+});
+
+weather.addEventListener("mouseover", (event) => {
+  event.target.textContent = "hi";
+  event.target.style.opacity = "40%";
+});
+weather.addEventListener("mouseout", (event) => {
   event.target.style.opacity = "100%";
 });
