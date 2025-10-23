@@ -153,9 +153,9 @@
   }
 }
 body {
-   /* background-image: url(background.jpg);
-  background-size: cover; */
-  background:radial-gradient(red,blue);
+  background-image: url(background.jpg);
+  background-size: cover;
+  /* background:radial-gradient(red,blue); */
 
   display: block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -320,7 +320,7 @@ h1 {
   box-shadow: 0px 0px 60px rgb(1, 85, 242), inset -2px -2px 36px rgb(4, 13, 248);
   border-radius: 30px;
   color: white;
-  
+
   width: 100%;
 }
 /* .section {
@@ -341,8 +341,7 @@ span {
   border-radius: 30px;
   box-shadow: 0 0 13px 7px rgba(99, 228, 99, 0.968);
   /* margin-left: 40vw; */
-  
- 
+
   &:hover {
     box-shadow: 0 0 13px 7px rgba(96, 9, 225, 0.5);
     transition: all 0.3s ease-in-out;
@@ -382,11 +381,10 @@ span {
 }
 .top {
   margin-top: 90px;
-} */
- .p1 {
+}
+*/ .p1 {
   margin-top: 0;
 }
-
 
 #name {
   &:focus {
@@ -395,7 +393,6 @@ span {
 }
 #subject {
   align-items: center;
-  
 
   &:focus {
     border: 3px solid rgb(229, 23, 109);
@@ -424,7 +421,6 @@ span {
 }
 .content-container {
   width: 100%;
- 
 }
 .ed {
   font-size: 2rem;
@@ -439,7 +435,6 @@ span {
 }
 .main-container {
   width: 100%;
-  
 }
 .image {
   width: 50%;
@@ -457,7 +452,6 @@ span {
   cursor: pointer;
   box-shadow: 0px 0px 60px rgb(1, 85, 242), inset -2px -2px 36px rgb(4, 13, 248);
   border-radius: 30px;
- 
 }
 .bg a:active {
   color: red;
@@ -484,54 +478,50 @@ button {
   content: "My ";
   color: red;
 }
-.new{
- 
+.new {
   height: auto;
   width: 100vw;
 }
-hr{
- box-shadow: 5px -16px 20px 0px rgb(4, 48, 130),inset 0 0 0 0;
+hr {
+  box-shadow: 5px -16px 20px 0px rgb(4, 48, 130), inset 0 0 0 0;
 }
-.pro-container{
+.pro-container {
   height: auto;
   width: 80%;
- 
 }
 .photo {
   /* border: 2px solid white; */
   cursor: pointer;
   opacity: 80%;
-   border: 2px solid rgb(227, 192, 20);
-   border-radius: 20px;
+  border: 2px solid rgb(227, 192, 20);
+  border-radius: 20px;
 }
-.contents{
+.contents {
   opacity: 0;
   width: 50%;
   height: auto;
   margin-top: 10px;
- top: 0;
- left: 0;
+  top: 0;
+  left: 0;
 }
 
 .cursor {
- 
   display: flex;
   width: 100%;
   margin: 100px auto;
   overflow-x: auto;
-   /* box-shadow: 0 0 13px 7px rgba(244, 248, 244, 0.5);
+  /* box-shadow: 0 0 13px 7px rgba(244, 248, 244, 0.5);
  border: 2px solid rgb(0, 30, 255); */
   touch-action: none;
   pointer-events: none;
- 
 }
 .cursor::-webkit-scrollbar {
- display: none;
+  display: none;
 }
 .group {
   display: flex;
   gap: 2rem;
-  animation: spin 3s infinite linear ;
+  animation: spin 3s infinite linear;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -542,13 +532,11 @@ hr{
   flex: 0 0 5rem;
   padding: 2rem;
   flex: content;
-  font-size: calc(0.5rem,1rem);
-  width: calc(20%,50%);
-  max-width:fit-content;
+  font-size: calc(0.5rem, 1rem);
+  width: calc(20%, 50%);
+  max-width: fit-content;
   height: auto;
   max-height: min-content;
- 
-  
 }
 @keyframes spin {
   from {
@@ -559,47 +547,40 @@ hr{
   }
 }
 .skills {
-  font-size: clamp(2rem,4rem,6rem);
+  font-size: clamp(2rem, 4rem, 6rem);
   text-align: left;
   font-weight: bold;
 }
-.a1{
+.a1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-   
-    
 }
-.contain{
+.contain {
   border: 2px solid rgba(35, 35, 36, 0.492);
   padding: 50px;
- gap: 20px;
-   flex-direction: row;
-    display: flex;
-  justify-content:space-between;
+  gap: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 20px 10px ;
-  border-radius: 20px; 
-  background-color: rgba(0, 0, 0, 0.51); 
+  box-shadow: 0 0 20px 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.51);
   width: 100%;
   height: 300px;
   overflow: hidden;
-  
-  
 }
-.box{
+.box {
   max-height: 296px;
   height: 50%;
   width: 300px;
   flex-shrink: 1;
   border-radius: 10px;
-
 }
-.s{
+.s {
   border: 2px solid rgb(24, 24, 11);
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 0 12px 1px rgb(20, 185, 227) ;
+  box-shadow: 0 0 12px 1px rgb(20, 185, 227);
 }
-
